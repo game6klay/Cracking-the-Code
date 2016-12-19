@@ -1,0 +1,58 @@
+
+public class ReplaceWhiteSpace {
+	
+
+	//just count the number of the white spaces in the string 	
+	
+
+	// Edit the string replacing the string with %20 of every white space occured 
+	// We start edit the string from the end of the string
+
+	public String getReplacedString (char[] string, int trueLength) {
+
+		int spacesCounter = 0;
+		int i;
+		for (i=0;i<string.length();i++){
+
+			if (string[i]==' ') {
+
+				spaceCounter ++;
+			}
+
+		}
+
+		index = (spaceCounter * 2) + trueLength;
+
+		if (trueLength < str.length) {
+
+			string[trueLength]= '\0'
+			// end of array 
+
+		}
+
+		for (i = trueLength-1; i>=0; i--){
+
+			if (string[i] == ' ') {
+
+				string[index -1]= '0';
+				string[index -2]= '2';
+				string[index -3]= '%';
+				index = index - 3;
+
+			} else {
+
+				string[index -1] = string[i];
+				index--;
+			}
+
+
+		}
+
+	}
+
+
+	
+
+}
+
+
